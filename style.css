@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Corpo do Site*/
+
+.Corpo {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 10px;
+}
+
+/*Header*/
+
+header {
+  background-color: rgb(0, 0, 119);
+  color: #fff;
+  padding: 1px;
+  text-align: end;
+}
+
+header address {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.Icon {
+  color: #fff;
+  background-color: rgb(0, 0, 119);
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding: 10px;
+}
+
+/*Menu*/
+
+.Head {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.Head a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(185, 184, 183);
+  font-weight: bold;
+  margin: 10px
+}
+
+/*sub menu*/
+
+.Head li ul {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(0, 0, 119);
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  padding: 0;
+}
+
+.Head li:hover ul {
+  display: flex;
+}
+
+/*sub menu 2*/
+
+.Head li ul li ul li {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(0, 0, 119);
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  padding: 10px;
+}
+
+.Head li ul:hover ul li {
+  display: flex;
+}
+
+.Head li {
+  text-align: end;
+}
+
+.Head li a:hover {
+  color: rgb(0, 0, 119);
+}
+
+/*Slider*/
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1em 0;
+  height: 290px;
+  background-color: rgb(163, 163, 163);
+  margin-top: 10px;
+}
+
+.nivoSlider {
+  height: 290px;
+  width: 894px;
+  background-color: rgb(129, 129, 129);
+}
+
+/*Footer*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.Rodape {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  color: #666;
+}
+
+.Rodape a {
+  font-size: 12px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.Rodape li {
+  text-align: center;
+}
+
+.Rodape ul {
+  display: flex;
+}
+
+/*Conteudo*/
+
+main {
+  padding: 20px;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Imagem {
+  color: #fff;
+  background-color: rgb(0, 0, 119);
+  height: 163px;
+  width: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  color: #666;
+}
+
+.Intro {
+  display: flex;
+}
+
+.Conteudo {
+  width: 60%;
+  font-size: 12px;
+  color: #666
+}
+
+.Ilustracao {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 212px;
+  width: 325px;
+  background-color: rgb(0, 0, 119);
+  color: #fff;
+}
+
+h2 {
+  color: rgb(185, 184, 183);
+  font-size: large;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
